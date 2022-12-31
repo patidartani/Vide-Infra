@@ -1,0 +1,1884 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.expertise-overlay {
+  width: 100vw;
+  background: #fff;
+  height: 70vh;
+  position: absolute;
+  top: -100%;
+  z-index: 9999;
+}
+
+.expertise-overlay h1 {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  left: 2%;
+  top: 3%;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.765);
+  padding: 4px 4px;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+
+.expertise-overlay h1:hover {
+  color: rgba(0, 0, 0, 0.67);
+  background-color: rgb(95, 93, 93);
+  cursor: pointer;
+}
+
+.expertise-overlay p {
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 45px;
+  left: 25%;
+  top: 5%;
+  font-weight: 600;
+  position: relative;
+}
+
+.expertise-overlay img {
+  position: relative;
+  left: 70%;
+  overflow: hidden;
+  bottom: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------nav------------------ */
+#nav {
+  width: 100vw;
+  height: 8vh;
+  border-bottom: 0.2px solid rgba(151, 150, 150, 0.809);
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+#nav a {
+  padding: 15px;
+  position: relative;
+  color: #000;
+  left: 20%;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav .logo {
+  position: relative;
+  right: 20%;
+  font-size: 15px;
+}
+
+#nav .logo a {
+  position: relative;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav h1 {
+  font-size: 15px;
+  position: relative;
+  right: 10%;
+}
+
+#nav h1 i {
+  color: #000;
+  background-color: rgba(187, 184, 184, 0.876);
+  font-size: 15px;
+  left: 5px;
+  position: relative;
+  border-radius: 50%;
+  padding: 4px 5px;
+  transition: 0.5s;
+}
+
+#nav h1 i:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.557);
+  cursor: pointer;
+}
+
+#nav h2 {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #0000;
+  text-shadow:
+    0 0 #000,
+    0 1.2em #1095c1;
+  overflow: hidden;
+  transition: .3s;
+}
+
+#nav h2:hover {
+  text-shadow:
+    0 -1.2em #000,
+    0 0 rgb(99, 95, 95);
+}
+
+#nav h3 {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #0000;
+  text-shadow:
+    0 0 #000,
+    0 1.2em #1095c1;
+  overflow: hidden;
+  transition: .3s;
+}
+
+#nav h3:hover {
+  text-shadow:
+    0 -1.2em #000,
+    0 0 rgb(99, 95, 95);
+}
+
+#nav h4 {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #0000;
+  text-shadow:
+    0 0 #000,
+    0 1.2em #1095c1;
+  overflow: hidden;
+  transition: .3s;
+}
+
+#nav h4:hover {
+  text-shadow:
+    0 -1.2em #000,
+    0 0 rgb(99, 95, 95);
+}
+
+#nav h5 {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #0000;
+  text-shadow:
+    0 0 #000,
+    0 1.2em #1095c1;
+  overflow: hidden;
+  transition: .3s;
+}
+
+#nav h5:hover {
+  text-shadow:
+    0 -1.2em #000,
+    0 0 rgb(99, 95, 95);
+}
+
+#nav h6 {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #0000;
+  text-shadow:
+    0 0 #000,
+    0 1.2em #1095c1;
+  overflow: hidden;
+  transition: .3s;
+}
+
+#nav h6:hover {
+  text-shadow:
+    0 -1.2em #000,
+    0 0 rgb(99, 95, 95);
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(191, 175, 175);
+}
+
+#main .page {
+  width: 100vw;
+  height: 80vh;
+  z-index: 999;
+  background-color: rgba(187, 184, 184, 0.791);
+}
+
+#main .page h1 {
+  font-size: 95px;
+  position: relative;
+  top: 15%;
+  left: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main .page span {
+  color: #fff;
+  font-size: 95px;
+  position: absolute;
+  top: 75%;
+}
+
+#main .page p {
+  font-size: 25px;
+  position: relative;
+  left: 65%;
+  top: 50%;
+  color: rgba(0, 0, 0, 0.827);
+}
+
+#main .page .circle1 {
+  width: 130px;
+  height: 130px;
+  top: 27%;
+  left: 15%;
+  border: 0.5px solid #fff;
+  position: relative;
+  border-radius: 50%;
+}
+
+#main .page .circle2 {
+  width: 130px;
+  height: 130px;
+  top: 5%;
+  left: 12%;
+  border: 0.5px solid rgb(57, 55, 55);
+  position: relative;
+  border-radius: 50%;
+}
+
+#main .page .circle3 {
+  width: 130px;
+  height: 130px;
+  bottom: 16%;
+  left: 18%;
+  border: 0.5px solid rgb(46, 46, 46);
+  position: relative;
+  border-radius: 50%;
+}
+
+#main .page1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  /* background-attachment: fixed; */
+  cursor: none;
+  overflow: hidden;
+  position: relative;
+}
+
+#main .page1 #cursor {
+  position: absolute;
+  width: 200px;
+  overflow: hidden;
+  height: 200px;
+  z-index: 999;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: 0.1s;
+  top: 120%;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#main .page1 #cursor h1 {
+  position: relative;
+  left: 25%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+
+}
+
+/* #main .page1 iframe{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
+}  */
+
+/* ----------page3--------- */
+#main .page2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+#main .page2 .left {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page2 .left .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 28%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 10%;
+
+}
+
+#main .page2 .left .box img {
+  transition: 0.5s;
+}
+
+#main .page2 .left .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page2 .left .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page2 .left .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page2 .left h1 {
+  position: relative;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.793);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  top: 15%;
+  padding: 4px 6px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page2 .left button {
+  position: relative;
+  left: 17%;
+  top: 11%;
+  padding: 6px 17px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(101, 98, 98, 0.237);
+  color: #000;
+  transition: 1s;
+}
+
+#main .page2 .left button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page2 .left h2 {
+  position: relative;
+  font-size: 17px;
+  top: 32%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page2 .left h3 {
+  position: relative;
+  font-size: 17px;
+  top: 32%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+
+
+#main .page2 .right {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page2 .right .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 16%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 5%;
+
+}
+
+#main .page2 .right .box img {
+  transition: 0.5s;
+  right: 10%;
+  position: relative;
+}
+
+#main .page2 .right h1 {
+  position: relative;
+  left: 5%;
+  color: rgba(0, 0, 0, 0.905);
+  font-size: 45px;
+  top: 10%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page2 .right p {
+  position: relative;
+  top: 15%;
+  left: 5%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main .page2 .right .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page2 .right .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page2 .right .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page2 .right h2 {
+  position: relative;
+  font-size: 17px;
+  top: 18%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page2 .right h3 {
+  position: relative;
+  font-size: 17px;
+  top: 18%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+/* -----------page3----------  */
+
+#main .page3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+#main .page3 .left {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page3 .left .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 25%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 10%;
+
+}
+
+#main .page3 .left .box img {
+  transition: 0.5s;
+  width: 100%;
+}
+
+#main .page3 .left .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page3 .left .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page3 .left .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page3 .left h1 {
+  position: relative;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.793);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  top: 15%;
+  padding: 4px 6px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page3 .left button {
+  position: relative;
+  left: 17%;
+  top: 11%;
+  padding: 6px 17px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(101, 98, 98, 0.237);
+  color: #000;
+  transition: 1s;
+}
+
+#main .page3 .left button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page3 .left h2 {
+  position: relative;
+  font-size: 17px;
+  top: 27%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page3 .left h3 {
+  position: relative;
+  font-size: 17px;
+  top: 27%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+
+
+#main .page3 .right {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page3 .right .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 16%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 5%;
+
+}
+
+#main .page3 .right .box img {
+  transition: 0.5s;
+  width: 100%;
+  position: relative;
+}
+
+#main .page3 .right h1 {
+  position: relative;
+  left: 5%;
+  color: rgba(0, 0, 0, 0.905);
+  font-size: 45px;
+  top: 10%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page3 .right p {
+  position: relative;
+  top: 15%;
+  left: 5%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main .page3 .right .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+
+}
+
+#main .page3 .right .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page3 .right .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page3 .right h2 {
+  position: relative;
+  font-size: 17px;
+  top: 18%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page3 .right h3 {
+  position: relative;
+  font-size: 17px;
+  top: 18%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+/* ------------page4------------ */
+#main .page4 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+#main .page4 .left {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page4 .left .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 28%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 10%;
+
+}
+
+#main .page4 .left .box img {
+  transition: 0.5s;
+  width: 100%;
+}
+
+#main .page4 .left .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page4 .left .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page4 .left .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page4 .left h1 {
+  position: relative;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.793);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  top: 15%;
+  padding: 4px 6px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page4 .left button {
+  position: relative;
+  left: 17%;
+  top: 11%;
+  padding: 6px 17px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(101, 98, 98, 0.237);
+  color: #000;
+  transition: 1s;
+}
+
+#main .page4 .left button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page4 .left h2 {
+  position: relative;
+  font-size: 17px;
+  top: 29%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page4 .left h3 {
+  position: relative;
+  font-size: 17px;
+  top: 29%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+
+
+#main .page4 .right {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page4 .right .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 19%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 5%;
+
+}
+
+#main .page4 .right .box img {
+  transition: 0.5s;
+  width: 100%;
+  position: relative;
+}
+
+#main .page4 .right h1 {
+  position: relative;
+  left: 5%;
+  color: rgba(0, 0, 0, 0.905);
+  font-size: 45px;
+  top: 10%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page4 .right p {
+  position: relative;
+  top: 15%;
+  left: 5%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main .page4 .right .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page4 .right .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page4 .right .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page4 .right h2 {
+  position: relative;
+  font-size: 17px;
+  top: 20%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page4 .right h3 {
+  position: relative;
+  font-size: 17px;
+  top: 20%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+/* ---------------page5-------------- */
+#main .page5 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+#main .page5 .left {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page5 .left .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 28%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 10%;
+
+}
+
+#main .page5 .left .box img {
+  transition: 0.5s;
+  width: 100%;
+}
+
+#main .page5 .left .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page5 .left .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page5 .left .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page5 .left h1 {
+  position: relative;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.793);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  top: 15%;
+  padding: 4px 6px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page5 .left button {
+  position: relative;
+  left: 17%;
+  top: 11%;
+  padding: 6px 17px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(101, 98, 98, 0.237);
+  color: #000;
+  transition: 1s;
+}
+
+#main .page5 .left button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page5 .left h2 {
+  position: relative;
+  font-size: 17px;
+  top: 29%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page5 .left h3 {
+  position: relative;
+  font-size: 17px;
+  top: 29%;
+  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+
+
+#main .page5 .right {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main .page5 .right .box {
+  position: relative;
+  /* background-color: #fff; */
+  width: 650px;
+  top: 22%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  left: 5%;
+
+}
+
+#main .page5 .right .box img {
+  transition: 0.5s;
+  width: 100%;
+  position: relative;
+}
+
+#main .page5 .right h1 {
+  position: relative;
+  left: 5%;
+  color: rgba(0, 0, 0, 0.905);
+  font-size: 45px;
+  top: 10%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page5 .right p {
+  position: relative;
+  top: 15%;
+  left: 5%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main .page5 .right .box img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page5 .right .box h4 {
+  width: 30px;
+  height: 30px;
+  padding: 4px 5px;
+  background: rgba(143, 139, 139, 0.805);
+  color: #000;
+  font-size: 20px;
+  z-index: 999;
+  position: relative;
+  top: 90%;
+  left: 90%;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+#main .page5 .right .box h4:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page5 .right h2 {
+  position: relative;
+  font-size: 17px;
+  top: 23%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+#main .page5 .right h3 {
+  position: relative;
+  font-size: 17px;
+  top: 23%;
+  left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.437);
+}
+
+/* -----page6----- */
+#main .page6 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(16, 14, 14, 0.916);
+}
+
+#main .page6 h1 {
+  position: relative;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.776);
+  top: 17%;
+  left: 10%;
+}
+
+#main .page6 .circle1 {
+  position: relative;
+  width: 280px;
+  top: 35%;
+  left: 18%;
+  height: 280px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#main .page6 .circle2 {
+  position: relative;
+  width: 280px;
+  left: 12%;
+  height: 280px;
+  bottom: 2%;
+  border: 1px solid rgba(255, 255, 255, 0.354);
+  border-radius: 50%;
+}
+
+#main .page6 .circle3 {
+  position: relative;
+  width: 280px;
+  left: 15%;
+  height: 280px;
+  bottom: 40%;
+  border: 1px solid rgba(255, 255, 255, 0.354);
+  border-radius: 50%;
+}
+
+#main .page6 .circle4 {
+  position: relative;
+  width: 280px;
+  left: 21%;
+  height: 280px;
+  bottom: 78%;
+  border: 1px solid rgba(255, 255, 255, 0.354);
+  border-radius: 50%;
+}
+
+#main .page6 .circle5 {
+  position: relative;
+  width: 280px;
+  left: 24%;
+  height: 280px;
+  bottom: 115%;
+  border: 1px solid rgba(255, 255, 255, 0.354);
+  border-radius: 50%;
+
+}
+
+#main .page6 .lines {
+  position: relative;
+  font-size: 40px;
+  overflow: hidden;
+  color: #fff;
+  bottom: 180%;
+  left: 60%;
+  text-align: start;
+  width: 700px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+
+
+}
+
+#main .page6 .lines ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 45px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.238);
+  list-style: none;
+}
+
+#main .page6 .lines ul i {
+  font-size: 15px;
+  text-align: justify;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 4%;
+  color: rgba(255, 255, 255, 0.766);
+  background-color: rgba(255, 255, 255, 0.182);
+  border-radius: 50%;
+  padding: 5px 4px;
+  text-align: center;
+
+}
+
+/* ------------page7------------ */
+#main .page7 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(187, 184, 184, 0.791);
+}
+
+#main .page7 h1 {
+  position: relative;
+  font-size: 18px;
+  right: 35%;
+  top: 5%;
+  color: rgba(0, 0, 0, 0.77);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page7 .right {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+}
+
+#main .page7 .right p {
+  position: relative;
+  top: 5%;
+  left: 10%;
+  font-size: 35px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.872);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main .page7 .right h2 {
+  position: relative;
+  top: 18%;
+  left: 10%;
+  font-size: 200px;
+  color: #fff;
+  font-weight: 900;
+}
+
+#main .page7 .right h3 {
+  position: relative;
+  top: 3%;
+  font-family: 'Times New Roman', Times, serif;
+  left: 80%;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.795);
+}
+
+hr {
+  width: 80vh;
+  position: relative;
+  left: 10%;
+  top: 15%;
+  background: rgba(0, 0, 0, 0.537);
+}
+
+#main .page7 button {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: rgba(154, 152, 152, 0.933);
+  color: rgba(0, 0, 0, 0.718);
+  border: none;
+}
+
+#main .page7 button:hover {
+  background-color: rgba(0, 0, 0, 0.718);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -------------page8------------- */
+#main .page8 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(187, 184, 184, 0.791);
+}
+
+
+.carousel {
+  background-color: rgba(187, 184, 184, 0.791);
+}
+
+#main .page8 .carousel-cell {
+  width: 40%;
+  height: 600px;
+  position: relative;
+  margin-right: 50px;
+  background: #fff;
+  top: 10%;
+  counter-increment: gallery-cell;
+}
+
+#main .page8 .carousel-cell img {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main .page8 .carousel-cell h1 {
+  position: relative;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.741);
+  font-family: 'Times New Roman', Times, serif;
+  top: 55%;
+  left: 5%;
+}
+
+#main .page8 .carousel-cell h2 {
+  position: relative;
+  top: 50%;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 4px 4px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(187, 184, 184, 0.791);
+}
+
+#main .page8 .carousel-cell h2:hover {
+  background: rgba(0, 0, 0, 0.626);
+  cursor: pointer;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 4px 4px;
+  text-align: center;
+  align-items: center;
+}
+
+/* ----------page9----------- */
+#main .page9 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+#main .page9 h1 {
+  position: relative;
+  font-size: 70px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  left: 10%;
+  top: 2%;
+}
+
+#main .page9 button {
+  position: relative;
+  left: 82%;
+  padding: 8px 17px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(101, 98, 98, 0.237);
+  color: #000;
+  transition: 1s;
+}
+
+#main .page9 button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .page9 .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  left: 10%;
+  top: 7%;
+  height: 75vh;
+  position: relative;
+
+}
+
+#main .page9 .card1 {
+  position: relative;
+  border: 0.2px solid rgba(0, 0, 0, 0.287);
+  height: 75vh;
+  width: 24vw;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+
+}
+
+#main .page9 .card1 .img {
+  position: relative;
+  width: 24vw;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#main .page9 .card1 .img img {
+  position: relative;
+  width: 24vw;
+  height: 30vh;
+  transition: 0.5s;
+}
+
+#main .page9 .card1 .img img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page9 .card1 p {
+  position: relative;
+  left: 5%;
+  font-size: 25px;
+  top: 5%;
+}
+
+#main .page9 .card1 h3 {
+  position: relative;
+  top: 30%;
+  left: 5%;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.566);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main .page9 .card1 h2 {
+  position: relative;
+  top: 30%;
+  left: 5%;
+  font-size: 18px;
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+#main .page9 .card2 {
+  position: relative;
+  border: 0.2px solid rgba(0, 0, 0, 0.287);
+  height: 75vh;
+  width: 24vw;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+
+}
+
+#main .page9 .card2 .img {
+  position: relative;
+  width: 24vw;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+
+#main .page9 .card2 .img img {
+  position: relative;
+  width: 24vw;
+  height: 30vh;
+  transition: 0.5s;
+}
+
+#main .page9 .card2 .img img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page9 .card2 p {
+  position: relative;
+  left: 5%;
+  font-size: 25px;
+  top: 5%;
+}
+
+#main .page9 .card2 h3 {
+  position: relative;
+  top: 35%;
+  left: 5%;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.566);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main .page9 .card2 h2 {
+  position: relative;
+  top: 35%;
+  left: 5%;
+  font-size: 18px;
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+#main .page9 .card3 {
+  position: relative;
+  border: 0.2px solid rgba(0, 0, 0, 0.287);
+  height: 75vh;
+  width: 24vw;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+
+}
+
+#main .page9 .card3 .img {
+  position: relative;
+  width: 24vw;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+
+#main .page9 .card3 .img img {
+  position: relative;
+  width: 24vw;
+  height: 30vh;
+  transition: 0.5s;
+}
+
+#main .page9 .card3 .img img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+#main .page9 .card3 p {
+  position: relative;
+  left: 5%;
+  font-size: 25px;
+  top: 5%;
+}
+
+#main .page9 .card3 h3 {
+  position: relative;
+  top: 30%;
+  left: 5%;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.566);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main .page9 .card3 h2 {
+  position: relative;
+  top: 30%;
+  left: 5%;
+  font-size: 18px;
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* -------------page10------------- */
+#main .page10 {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  background-color: #fff;
+}
+
+#main .page10 h3 {
+  position: relative;
+  top: 15%;
+  left: 10%;
+  color: rgba(0, 0, 0, 0.682);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main .page10 .social-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+  right: 10%;
+  transition: 1s;
+}
+
+#main .page10 .social-media a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.775);
+  font-size: 15px;
+}
+
+#main .page10 .social-media a:hover {
+  color: darkgray;
+}
+
+#main .page10 button {
+  position: relative;
+  left: 70%;
+  bottom: 10%;
+  padding: 8px 18px;
+  background-color: rgba(187, 184, 184, 0.791);
+  color: #000;
+  border-radius: 50px;
+  border: none;
+  transition: 1s;
+}
+
+#main .page10 button:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.723);
+  cursor: pointer;
+}
+
+#main .footer {
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+  border: 0.3px solid rgba(0, 0, 0, 0.527);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#main .footer h1 {
+  position: relative;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(0, 0, 0, 0.648);
+}
+
+
+
+/* -----------workstyle----------- */
+#main .work {
+  position: relative;
+  background-color: #fff;
+  width: 100vw;
+  height: 60vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.57);
+}
+
+#main .work h1 {
+  position: relative;
+  font-size: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 10%;
+  top: 10%;
+}
+
+#main .work .btns {
+  position: relative;
+  display: flex;
+  left: 10%;
+  top: 30%;
+}
+
+#main .work .btns button {
+  padding: 6px 15px;
+  margin: 0 3px;
+  border-radius: 50px;
+  background-color: rgba(186, 184, 184, 0.348);
+  border: 0.5px solid rgba(186, 184, 184, 0.348);
+}
+
+#main .work .btns span button {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+/* ----------company------------ */
+#main .company {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.282);
+}
+
+#main .company h1 {
+  position: relative;
+  font-size: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 10%;
+  top: 10%;
+}
+
+#main .company h2 {
+  position: relative;
+  left: 10%;
+  top: 37%;
+}
+
+#main .company h2 i {
+  background-color: #000;
+  border-radius: 50px;
+  padding: 3px 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* -----------blogs---------- */
+#main .blog {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.282);
+}
+
+#main .blog h1 {
+  position: relative;
+  font-size: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 10%;
+  top: 10%;
+}
+
+#main .blog .btns {
+  position: relative;
+  display: flex;
+  left: 10%;
+  top: 30%;
+}
+
+#main .blog .btns button {
+  padding: 6px 15px;
+  margin: 0 3px;
+  border-radius: 50px;
+  background-color: rgba(186, 184, 184, 0.348);
+  border: 0.5px solid rgba(186, 184, 184, 0.348);
+}
+
+#main .blog .btns span button {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+/* --------career--------- */
+#main .career {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: rgba(187, 184, 184, 0.791);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.282);
+}
+
+#main .career h1 {
+  position: relative;
+  font-size: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 10%;
+  top: 10%;
+}
+
+#main .career h2 {
+  position: relative;
+  left: 10%;
+  top: 37%;
+}
+
+#main .career h2 i {
+  background-color: #000;
+  border-radius: 50px;
+  padding: 3px 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* --------contact-------- */
+#main .contact {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: rgba(187, 184, 184, 0.791);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.282);
+}
+
+#main .contact h1 {
+  position: relative;
+  font-size: 90px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 10%;
+  top: 15%;
+}
+#main .contact h1 span{
+   color: #fff;
+}
+
+#main .contact h2 {
+  position: relative;
+  left: 10%;
+  top: 37%;
+}
+#main .contact h2 i {
+  background-color: #000;
+  border-radius: 50px;
+  padding: 3px 5px;
+  color: #fff;
+  font-size: 20px;
+}
